@@ -1,0 +1,45 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+name = input("What is your name? ")
+print(f"Hello {name}, I am architect 001 here to ask your guidance to find the location of the treasure. Pleasure to work with you!")
+
+
+direction = input("Starting off, which direction do you think we must follow on this road? left or right?  ").lower()
+if direction == "left":
+  print(f"{name}, we have arrived in front of a river.")
+  river_situation = input("Do you suggest we swim or wait? ").lower()
+  if river_situation == "wait":
+    print(f"{name}, we have arrived infront of three different colour rooms, inside the cave we entered.")
+    room_color = input("Which color room do you think we should enter? Red, green or yellow?").lower()
+    if room_color == "yellow":
+      print(f"{name}, thank you very much for your help. We successfully found our treasure. I am sure my boss will give me a promotion. Thank you very much.")
+    elif room_color == "red":
+      print(f"OH NO {name}, you entered the room before me. Now I hope I find the treasure room. Game over. ")
+    else:
+      print(f"OH NO {name}, luckily the green giant snake did not eat me for its lunch. Unfortunately, Bad luck {name}. Game over.")
+  else:
+    print(f"OH NO {name}, a shark ate you while you were trying to swim. Game over.")
+else:
+  print(f"OH NO {name}, you fell into a hole-trap set by the king of the previous kingdom. Game over. ")
